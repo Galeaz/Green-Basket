@@ -8,6 +8,8 @@ public class ScreenTransition : MonoBehaviour
     [Header("Level Transition Settings")]
     [Tooltip("Reference to the black screen UI element.")]
     public Image blackScreen;
+    [Tooltip("Reference to the black screen Text element.")]
+    public Text blackScreenText;
     [Tooltip("Transition time in seconds.")]
     public float transitionTime = 1.0f;
     [Tooltip("Duration to keep the screen black after transitioning.")]
@@ -45,6 +47,7 @@ public class ScreenTransition : MonoBehaviour
     {
         isTransitioning = true;
         blackScreen.color = Color.clear; // Make the black screen transparent.
+        blackScreenText.color = Color.clear; // Make the black screen text transparent.
 
         // Crossfade to black.
         yield return StartCoroutine(FadeIn());
@@ -74,11 +77,13 @@ public class ScreenTransition : MonoBehaviour
         while (elapsedTime < transitionTime)
         {
             blackScreen.color = Color.Lerp(Color.clear, Color.black, elapsedTime / transitionTime);
+            blackScreenText.color = Color.Lerp(Color.clear, Color.white, elapsedTime / transitionTime);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         blackScreen.color = Color.black;
+        blackScreenText.color = Color.white;
     }
 
     private IEnumerator FadeOut()
@@ -88,10 +93,12 @@ public class ScreenTransition : MonoBehaviour
         while (elapsedTime < transitionTime)
         {
             blackScreen.color = Color.Lerp(Color.black, Color.clear, elapsedTime / transitionTime);
+            blackScreenText.color = Color.Lerp(Color.white, Color.clear, elapsedTime / transitionTime);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         blackScreen.color = Color.clear;
+        blackScreenText.color = Color.clear;
     }
 }

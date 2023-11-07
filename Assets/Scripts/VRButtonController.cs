@@ -33,6 +33,7 @@ public class VRButtonController : MonoBehaviour
         {
             // Show a black screen and load the specified scene.
             screenTransition.blackScreen.enabled = true;
+            screenTransition.blackScreenText.enabled = true;
             string sceneName = levelToLoad.name;
             screenTransition.LoadLevel(sceneName);
         }
