@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6510808906828984691}
   - component: {fileID: 9061239691053712825}
   - component: {fileID: 1473210474547034607}
+  - component: {fileID: 3314959460805493583}
   m_Layer: 0
-  m_Name: Food_Apple_Red_Prefab
+  m_Name: Food_Apple_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,3 +96,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.039864555
   m_Center: {x: 0.0000045225024, y: 0.040173203, z: 0}
+--- !u!114 &3314959460805493583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403637470572766316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5885647141187f945be97c70b20babdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDesc: apple
+  itemName: Apple
+  sustScore: 5
+  itemPrice: 5
