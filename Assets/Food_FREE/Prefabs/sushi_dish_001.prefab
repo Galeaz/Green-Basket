@@ -61,3 +61,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a290a309ed93f924b8c5e5727f903d00, type: 3}
+--- !u!1 &995936702116461218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a290a309ed93f924b8c5e5727f903d00, type: 3}
+  m_PrefabInstance: {fileID: 77457254846154739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4059031194228715648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995936702116461218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5885647141187f945be97c70b20babdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDesc: 
+  itemName: Sushi
+  sustScore: 0
+  itemPrice: 0

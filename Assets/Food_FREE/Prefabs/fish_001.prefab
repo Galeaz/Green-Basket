@@ -61,3 +61,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc9555660233b1f4c8e9da5c66a9dab1, type: 3}
+--- !u!1 &6765674851212242868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc9555660233b1f4c8e9da5c66a9dab1, type: 3}
+  m_PrefabInstance: {fileID: 5847335601338159845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &693369914507305465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6765674851212242868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5885647141187f945be97c70b20babdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDesc: 
+  itemName: Fish
+  sustScore: 0
+  itemPrice: 0
