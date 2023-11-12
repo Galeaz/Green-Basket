@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1473210474547034607}
   - component: {fileID: 7531737260072837996}
   - component: {fileID: 2377399295498744776}
+  - component: {fileID: 6307397718564525938}
   m_Layer: 0
   m_Name: Food_Apple_Red
   m_TagString: Untagged
@@ -150,10 +151,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6307397718564525938}
+        m_TargetAssemblyTypeName: HoverText, Assembly-CSharp
+        m_MethodName: OnHoverEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6307397718564525938}
+        m_TargetAssemblyTypeName: HoverText, Assembly-CSharp
+        m_MethodName: OnHoverExited
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -248,3 +273,21 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &6307397718564525938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403637470572766316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73433eb53e99c41ec91a5f6123c00efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameStat: Red Apple
+  descriptionStat: An apple a day keeps the doctor away, but only if you throw it
+    at them really, really hard!
+  inOutOfSeasonStat: In-Season from July to December
+  locallySourcedStat: Locally Sourced
+  fairTradeStat: No Fair Trade
