@@ -17,9 +17,12 @@ public class ScreenTransition : MonoBehaviour
 
     private bool isTransitioning = false;
     private static ScreenTransition instance;
+    private static VRButtonController vRButtonController;
 
     private void Start()
     {
+        vRButtonController = FindObjectOfType<VRButtonController>();
+
         // Check if an instance of ScreenTransition already exists.
         if (instance == null)
         {
@@ -95,6 +98,15 @@ public class ScreenTransition : MonoBehaviour
             blackScreen.color = Color.Lerp(Color.black, Color.clear, elapsedTime / transitionTime);
             blackScreenText.color = Color.Lerp(Color.white, Color.clear, elapsedTime / transitionTime);
             elapsedTime += Time.deltaTime;
+            if(vRButtonController != null)
+            {
+                // Enable the VR controllers when the scene starts.
+                if (vRButtonController.rightHand != null)
+                    vRButtonController.rightHand.SetActive(true);
+
+                if (vRButtonController.leftHand != null)
+                    vRButtonController.leftHand.SetActive(true);
+            }
             yield return null;
         }
 

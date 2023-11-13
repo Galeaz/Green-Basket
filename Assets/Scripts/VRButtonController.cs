@@ -10,6 +10,9 @@ public class VRButtonController : MonoBehaviour
     [Tooltip("Specify the level to load when the button is clicked.")]
     public SceneAsset levelToLoad; // Set this in the Inspector to specify the level to load.
 
+    public GameObject rightHand;
+    public GameObject leftHand;
+
     private ScreenTransition screenTransition;
     private Transform mainCameraTransform;
 
@@ -34,6 +37,8 @@ public class VRButtonController : MonoBehaviour
             // Show a black screen and load the specified scene.
             screenTransition.blackScreen.enabled = true;
             screenTransition.blackScreenText.enabled = true;
+            rightHand.SetActive(false);
+            leftHand.SetActive(false);
             string sceneName = levelToLoad.name;
             screenTransition.LoadLevel(sceneName);
         }
