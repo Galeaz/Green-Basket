@@ -15,6 +15,9 @@ public class ScreenTransition : MonoBehaviour
     [Tooltip("Duration to keep the screen black after transitioning.")]
     public float postTransitionBlackDuration = 2.0f;
 
+    public GameObject rightHand;
+    public GameObject leftHand;
+
     private bool isTransitioning = false;
     private static ScreenTransition instance;
     private static VRButtonController vRButtonController;
@@ -101,11 +104,11 @@ public class ScreenTransition : MonoBehaviour
             if(vRButtonController != null)
             {
                 // Enable the VR controllers when the scene starts.
-                if (vRButtonController.rightHand != null)
-                    vRButtonController.rightHand.SetActive(true);
+                if (rightHand != null)
+                    rightHand.SetActive(true);
 
-                if (vRButtonController.leftHand != null)
-                    vRButtonController.leftHand.SetActive(true);
+                if (leftHand != null)
+                    leftHand.SetActive(true);
             }
             yield return null;
         }
