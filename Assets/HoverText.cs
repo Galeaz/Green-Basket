@@ -21,12 +21,15 @@ public class HoverText : MonoBehaviour
     {
         // Creates the canvas.
         objectStatsCanvas = new GameObject("ObjectStatsCanvas").AddComponent<Canvas>();
-        objectStatsCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        objectStatsCanvas.renderMode = RenderMode.WorldSpace;
+        objectStatsCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 5;
+        objectStatsCanvas.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         objectStatsCanvas.enabled = false;
 
         // ITEM TEXTBOX -----------------------------------------------------------------------------------------------------------
         GameObject itemName = new GameObject("ItemName");
         itemName.transform.SetParent(objectStatsCanvas.transform);
+        itemName.transform.LookAt(Camera.main.transform);
 
         objectStatsText = itemName.AddComponent<Text>();
         objectStatsText.font = Resources.GetBuiltinResource<Font>("Arial.ttf"); // You can use any font you prefer.
