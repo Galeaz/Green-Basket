@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestAdd : MonoBehaviour
+public class ShoppingCart : MonoBehaviour
 {
     public Inventory inventory;
     public Item newItem;
