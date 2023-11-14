@@ -15,4 +15,31 @@ public class Inventory : MonoBehaviour
     {
         inventory.Remove(oldItem);
     }
+
+    public float GetTotalPrice()
+    {
+        float total = 0f;
+
+        foreach (Item food in inventory)
+        {
+            total += food.GetPrice();
+        }
+
+        return total;
+    }
+
+    public float GetAverageSustainabilityScore()
+    {
+        float average = 0f;
+        float total = 0f;
+
+        foreach (Item food in inventory)
+        {
+            total += food.GetScore();
+        }
+
+        average = total/inventory.Count;
+
+        return average;
+    }
 }
