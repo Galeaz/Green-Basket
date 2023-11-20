@@ -16,7 +16,7 @@ public class VRButtonController : MonoBehaviour
     public Vector3 textPosition = new Vector3(0f, 0f, 0f);
 
     [Tooltip("Specify the font size of the text.")]
-    public int fontSize = 5;
+    public float fontSize = 5;
 
     private ScreenTransition screenTransition;
     private Transform mainCameraTransform;

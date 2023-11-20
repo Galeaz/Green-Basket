@@ -24,10 +24,12 @@ public class ScreenTransition : MonoBehaviour
     private bool isTransitioning = false;
     private static ScreenTransition instance;
     private static VRButtonController vRButtonController;
+    private static ResetPlayerPosition resetPlayerPosition;
 
     private void Start()
     {
         vRButtonController = FindObjectOfType<VRButtonController>();
+        resetPlayerPosition = FindObjectOfType<ResetPlayerPosition>();
 
         // Check if an instance of ScreenTransition already exists.
         if (instance == null)
@@ -141,6 +143,8 @@ public class ScreenTransition : MonoBehaviour
                 if (leftHand != null)
                     leftHand.SetActive(true);
             }
+
+            resetPlayerPosition.ResetPosition();
 
             elapsedTime += Time.deltaTime;
             yield return null;

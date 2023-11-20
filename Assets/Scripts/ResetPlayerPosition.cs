@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class ResetPlayerPosition : MonoBehaviour
 {
-    public Vector3 playerPosition;
+   private Vector3 startPosition;
 
-    // Start is called before the first frame update
     void Start()
     {
-        transform.position = playerPosition;
+        // Store the initial position when the scene starts
+        startPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ResetPosition()
     {
-        
+        // Reset the player's position to the stored starting position
+        transform.position = startPosition;
     }
 }
