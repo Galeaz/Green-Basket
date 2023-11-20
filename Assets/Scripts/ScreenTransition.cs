@@ -2,18 +2,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
 
 public class ScreenTransition : MonoBehaviour
 {
     [Header("Level Transition Settings")]
-    [Tooltip("Reference to the black screen UI element.")]
-    public Image blackScreen;
+    [Tooltip("Reference to the screen UI element (black or custom image).")]
+    public Image screenImage;
     [Tooltip("Reference to the black screen Text element.")]
-    public Text blackScreenText;
+    public TMP_Text blackScreenText;
     [Tooltip("Transition time in seconds.")]
     public float transitionTime = 1.0f;
-    [Tooltip("Duration to keep the screen black after transitioning.")]
-    public float postTransitionBlackDuration = 2.0f;
+    [Tooltip("Duration to keep the screen after transitioning.")]
+    public float postTransitionDuration = 2.0f;
+    [Tooltip("Reference to the custom image UI element.")]
+    public Image customImage;
 
     public GameObject rightHand;
     public GameObject leftHand;
@@ -52,25 +55,25 @@ public class ScreenTransition : MonoBehaviour
     private IEnumerator TransitionToLevel(string levelName)
     {
         isTransitioning = true;
-        blackScreen.color = Color.clear; // Make the black screen transparent.
+        screenImage.color = Color.clear; // Make the screen transparent.
         blackScreenText.color = Color.clear; // Make the black screen text transparent.
 
-        // Crossfade to black.
+        // Crossfade to the screen (black or custom image).
         yield return StartCoroutine(FadeIn());
 
         // Load the new level.
         SceneManager.LoadScene(levelName);
 
-        // Continue the black screen effect while the scene is loading.
+        // Continue the screen effect while the scene is loading.
         while (!SceneManager.GetSceneByName(levelName).isLoaded)
         {
             yield return null;
         }
 
-        // Keep the screen black for the specified duration.
-        yield return new WaitForSeconds(postTransitionBlackDuration);
+        // Keep the screen for the specified duration.
+        yield return new WaitForSeconds(postTransitionDuration);
 
-        // Crossfade from black.
+        // Crossfade from the screen.
         yield return StartCoroutine(FadeOut());
 
         isTransitioning = false;
@@ -82,13 +85,31 @@ public class ScreenTransition : MonoBehaviour
 
         while (elapsedTime < transitionTime)
         {
-            blackScreen.color = Color.Lerp(Color.clear, Color.black, elapsedTime / transitionTime);
+            if (vRButtonController.useCustomImage)
+            {
+                screenImage.color = Color.Lerp(Color.clear, Color.white, elapsedTime / transitionTime);
+            }
+            else
+            {
+                // If useCustomImage is not true, remove the source image from customImage.
+                customImage.sprite = null;
+                screenImage.color = Color.Lerp(Color.clear, Color.black, elapsedTime / transitionTime);
+            }
+
             blackScreenText.color = Color.Lerp(Color.clear, Color.white, elapsedTime / transitionTime);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        blackScreen.color = Color.black;
+        if (vRButtonController.useCustomImage)
+        {
+            screenImage.color = Color.white;
+        }
+        else
+        {
+            screenImage.color = Color.black;
+        }
+
         blackScreenText.color = Color.white;
     }
 
@@ -98,22 +119,34 @@ public class ScreenTransition : MonoBehaviour
 
         while (elapsedTime < transitionTime)
         {
-            blackScreen.color = Color.Lerp(Color.black, Color.clear, elapsedTime / transitionTime);
-            blackScreenText.color = Color.Lerp(Color.white, Color.clear, elapsedTime / transitionTime);
-            elapsedTime += Time.deltaTime;
-            if(vRButtonController != null)
+            if (vRButtonController.useCustomImage)
             {
-                // Enable the VR controllers when the scene starts.
+                screenImage.color = Color.Lerp(Color.white, Color.clear, elapsedTime / transitionTime);
+            }
+            else
+            {
+                // If useCustomImage is not true, remove the source image from customImage.
+                customImage.sprite = null;
+                screenImage.color = Color.Lerp(Color.black, Color.clear, elapsedTime / transitionTime);
+            }
+
+            blackScreenText.color = Color.Lerp(Color.white, Color.clear, elapsedTime / transitionTime);
+
+            // Enable the VR controllers when the scene starts.
+            if (vRButtonController != null)
+            {
                 if (rightHand != null)
                     rightHand.SetActive(true);
 
                 if (leftHand != null)
                     leftHand.SetActive(true);
             }
+
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        blackScreen.color = Color.clear;
+        screenImage.color = Color.clear;
         blackScreenText.color = Color.clear;
     }
 }
