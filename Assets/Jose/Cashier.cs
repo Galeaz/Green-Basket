@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Cashier : MonoBehaviour
 {
+    public GameObject cashierUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,8 @@ public class Cashier : MonoBehaviour
         
     }
 
-    public void Test()
+    public void OnCashierClicked()
     {
-        Debug.Log("Is you done tho");
+        cashierUI.SetActive(true);
     }
 }

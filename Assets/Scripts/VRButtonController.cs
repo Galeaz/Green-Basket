@@ -10,6 +10,7 @@ public class VRButtonController : MonoBehaviour
     [Tooltip("Specify the level to load when the button is clicked.")]
     public SceneAsset levelToLoad; // Set this in the Inspector to specify the level to load.
 
+    public GameObject cashierUI;
     private ScreenTransition screenTransition;
     private Transform mainCameraTransform;
 
@@ -39,5 +40,10 @@ public class VRButtonController : MonoBehaviour
             string sceneName = levelToLoad.name;
             screenTransition.LoadLevel(sceneName);
         }
+    }
+
+    public void OnButtonClickNo()
+    {
+        cashierUI.SetActive(false);
     }
 }
