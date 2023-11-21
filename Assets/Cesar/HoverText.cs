@@ -7,7 +7,7 @@ using TMPro;
 
 public class HoverText : MonoBehaviour
 {
-    [SerializeField] GameObject UICanvas;
+    [SerializeField] private GameObject UICanvas;
 
     private bool showCanvas = false;
 
