@@ -4799,8 +4799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 451464737}
-  distance: 0.5
+  cameraTransform: {fileID: 1304530882}
+  distance: 1
 --- !u!1001 &454987395
 PrefabInstance:
   m_ObjectHideFlags: 0
