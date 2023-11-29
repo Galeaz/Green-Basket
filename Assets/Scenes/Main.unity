@@ -4562,7 +4562,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: The seemingly innocent core ingredient of guacamole, avocados, requires
+    extensive land in tropical environments, contributing to water consumption and
+    deforestation.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -16424,7 +16426,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: Despite their fresh taste, vegetables with fruit properties generate the
+    highest carbon emissions among vegetables, and their out-of-season production
+    significantly contributes to greenhouse gas emissions.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -27734,7 +27738,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: '
+
+    Potatoes, a timeless and universally cherished vegetable, face shortages
+    in arid climates; however, promoting their production could alleviate this issue
+    and ensure widespread availability.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -46978,7 +46986,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: Apples, while generally considered environmentally positive, can pose risks
+    due to pesticides and artificial fertilizers; opting for local, in-season, organic
+    varieties is a recommended solution.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -50120,7 +50130,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: Fairtrade chocolates, although less environmentally impactful due to ethical
+    and sustainable sourcing, still incur a significant environmental cost, particularly
+    in terms of water usage and the production of impactful ingredients like milk
+    powder, sugar, and oil, making occasional cocoa indulgence acceptable.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -50147,8 +50160,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -57693,7 +57706,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: '
+
+    The leading soft drink producer generates approximately 3 million
+    metric tonnes of unmanaged plastics and 5.24 million metric tonnes of greenhouse
+    gas emissions, equivalent to 8.8 million flights from London to New York, underscoring
+    the need for sustainable production while emphasizing the importance of recycling
+    single-use packaging.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -57720,8 +57739,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 3.7
+  m_fontSizeBase: 3.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -64486,7 +64505,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: Growing these small crops requires significant land and water, and their
+    use of pesticides and agrochemicals can contribute to soil erosion, impacting
+    surrounding areas.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -64950,7 +64971,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: This brand has made the effort to use "imperfect" potatoes to upcycle them
+    into crunchy snacks. Although the packaging and other ingredients may not be
+    especially environmentally friendly, feel good knowing these chips help to not
+    waste food!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -64977,8 +65001,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4.5
+  m_fontSizeBase: 4.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -65362,7 +65386,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: food fact goes here....
+  m_text: "Couscous, besides being fun to say, is a resilient grain that thrives
+    in marginal lands, requiring less maintenance than other grains, showcasing its
+    surprising versatility\u2014worth a try!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
