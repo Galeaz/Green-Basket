@@ -3642,7 +3642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &119304120
 MonoBehaviour:
@@ -3777,7 +3777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &124026402
 MonoBehaviour:
@@ -5139,7 +5139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &199613992
 MonoBehaviour:
@@ -8869,7 +8869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &294240460
 MonoBehaviour:
@@ -9271,7 +9271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &312313769
 MonoBehaviour:
@@ -12116,7 +12116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &403997848
 MonoBehaviour:
@@ -18615,7 +18615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &626514027
 MonoBehaviour:
@@ -21687,7 +21687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &666589895
 MonoBehaviour:
@@ -23115,7 +23115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &725520726
 MonoBehaviour:
@@ -42253,7 +42253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &1237804270
 MonoBehaviour:
@@ -42388,7 +42388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &1237962498
 MonoBehaviour:
@@ -43225,7 +43225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &1287435689
 MonoBehaviour:
@@ -49387,7 +49387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &1471265912
 MonoBehaviour:
@@ -58008,7 +58008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!114 &1822605120
 MonoBehaviour:
@@ -68152,7 +68152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d60ddbf3b13475a8beddf76506ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 1304530882}
+  cameraTransform: {fileID: 474225659}
   distance: 1.7
 --- !u!1 &2136668983
 GameObject:
